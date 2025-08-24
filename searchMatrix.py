@@ -7,3 +7,7 @@ class Solution(object):
         :type target: int
         :rtype: bool
         """
+
+        res = []
+        if not matrix:
+            return res
