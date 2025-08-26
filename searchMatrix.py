@@ -30,3 +30,16 @@ class Solution(object):
                 for i in range(right, left - 1, -1):
                     res.append(matrix[bottom][i])
                 bottom -= 1
+
+             if left <= right:
+                for i in range(bottom, top - 1, -1):
+                    res.append(matrix[i][left])
+                left += 1
+
+        return res
+
+
+if __name__ == "__main__":
+    obj = Solution()
+    matrix = [[1,2,3],[4,5,6],[7,8,9]]
+    print(obj.spiralOrder(matrix))
