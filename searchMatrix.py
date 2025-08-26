@@ -37,3 +37,9 @@ class Solution(object):
                 left += 1
 
         return res
+
+
+if __name__ == "__main__":
+    obj = Solution()
+    matrix = [[1,2,3],[4,5,6],[7,8,9]]
+    print(obj.spiralOrder(matrix))
